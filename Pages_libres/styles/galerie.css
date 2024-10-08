@@ -1,0 +1,179 @@
+html{
+
+  background-color: black;
+  counter-reset: color;
+  display:flex;
+  flex-direction: column;
+  height:100%;
+
+}
+header {
+
+
+  background-image: url("../logos/download.png");
+  background-size:contain;
+
+  height:10%;
+
+
+  border-bottom:4px solid darkred;
+
+}
+Central{
+
+  display:flex;
+  flex-direction: row;
+  height:90%;
+}
+aside{
+  color:darkorange;
+
+  display:flex;
+  flex-direction: column;
+  width:10%;
+  height:100%;
+  justify-content: space-around;
+  border-right:4px solid darkred;
+
+}
+aside.img:hover{
+  counter-increment: color;
+  content:counter(color);
+}
+Sommaire{
+  height:100%;
+
+  width:100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+
+}
+Sommaire img{
+  width:50%;
+  height:20%;
+}
+article{
+
+  color:white;
+  background-image: url("../Images/diovsjotaro.png"),url("../Images/backk.jpg");
+
+  background-attachment: scroll,local;
+  background-size:cover,auto;
+
+  width:90%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow:auto;
+
+
+}
+footer{
+  height:10%;
+  background-image: url("../logos/download.png");
+  background-size:contain;
+  border-top:4px solid darkred;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+nav a{
+  height:80%;
+  background-color: darkred;
+
+
+}
+
+nav a.inactif:hover{
+  background-color: darkgreen;
+  transition-duration: 0.3s;
+  box-shadow: 0px 0px 10px green;
+}
+nav{
+  height:100%;
+  width:100%;
+
+
+
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+nav a{
+  height:80%;
+  background-color: darkred;
+
+
+}
+
+nav a.actif{
+  background-color:darkgreen;
+}
+nav a.inactif:hover{
+  background-color: darkgreen;
+  transition-duration: 0.3s;
+  box-shadow: 0px 0px 10px green;
+}
+
+
+a img{
+  height:100%;
+  width:100%;
+}
+
+
+img.central{
+
+
+  align-self: center;
+
+  border-bottom:8px groove darkred;
+  border-top:8px ridge darkred;
+  border-left:8px ridge darkred;
+  border-right:8px groove darkred;
+
+}
+
+p{
+
+  font-size:20px;
+  align-self: center
+}
+
+
+PARTIE{
+  color:orange;
+
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:40px;
+  border-bottom:1px dashed darkorange;
+  border-top:1px dashed darkorange;
+  font-size:25px;
+
+
+}
+PARTIE::after{
+  counter-increment: color;
+  content:counter(color) " :";
+}
+PARTIE:hover{
+  counter-increment: color 1000000;
+}
+input,select{
+  background-color:black;
+  color: orange;
+  width:50%;
+  align-self: center;
+}
+MC{
+  color:red;
+}

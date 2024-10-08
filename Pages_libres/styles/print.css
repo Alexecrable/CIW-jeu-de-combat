@@ -1,0 +1,89 @@
+
+header {
+  display:none;
+
+}
+aside{
+  display:none;
+
+}
+
+article{
+
+
+
+  display:flex;
+  flex-direction: column;
+
+
+
+}
+article nav{
+  height:65%;
+}
+article img.acc{
+  height:100%;
+  width:100%;
+}
+article iframe{
+  padding-left: 30%;
+
+
+}
+article p{
+  padding-left:80px;
+  font-size:20px;
+}
+
+article form{
+  display:flex;
+  flex-direction: column;
+  align-self: center;
+
+
+}
+footer{
+
+ display:none;
+
+
+}
+nav{
+  display:none;
+
+}
+
+
+
+img{
+  display: flex;
+  height:100px;
+  width:50%;
+  align-self: center;
+
+  border-bottom:8px groove darkred;
+  border-top:8px ridge darkred;
+  border-left:8px ridge darkred;
+  border-right:8px groove darkred;
+
+}
+
+video{display:none;}
+iframe{display:none;}
+
+
+PARTIE{
+  color:orange;
+
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:40px;
+  border-bottom:8px dashed darkorange;
+  border-top:8px dashed darkorange;
+  font-size:35px;
+
+}
+
+MC{
+  color:red;
+}

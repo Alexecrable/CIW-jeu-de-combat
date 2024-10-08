@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml" id="fond" oncontextmenu="return rainbow()">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Galerie</title>
+    <link rel="stylesheet" href="./styles/galerie.css" charset="utf-8" />
+    <script type="text/javascript" src="./Scripts/galerie.js"></script>
+</head>
+<header>
+  <nav><a class="inactif" href="../Page_imposée/livre_Petit/livre_v2.xhtml"><img src="./Images/IMPOSEE.png" alt="Accueil"/></a></nav>
+</header>
+<Central>
+  <aside>
+    <Sommaire>
+
+    <img  id="carous" onmouseover="changeImageM3(ousel[0].src,but[0].value)" src="./Images/Adachi_presente/Overhead.jpg" width="100px" height="100px"/>
+    <img  id="carous" onmouseover="changeImageM3(ousel[1].src,but[1].value)" src="./Images/Adachi_presente/Sweep.jpg" width="100px" height="100px"/>
+    <img  id="carous" onmouseover="changeImageM3(ousel[2].src,but[2].value)" src="./Images/Adachi_presente/Anti-air.jpg" width="100px" height="100px"/>
+    <img id="carous" onmouseover="changeImageM3(ousel[3].src,but[3].value)" src="./Images/Adachi_presente/Reversal.jpg" width="100px" height="100px"/>
+    <img  id="carous" onmouseover="changeImageM3(ousel[4].src,but[4].value)" src="./Images/Adachi_presente/TANK.jpg" width="100px" height="100px"/>
+    <img id="carous" onmouseover="changeImageM3(ousel[5].src,but[5].value)" src="./Images/Adachi_presente/Astral.jpg" width="100px" height="100px"/>
+    <img id="carous" onmouseover="changeImageM3(ousel[6].src,but[6].value)" src="./Images/Adachi_presente/Adachi.jpg" width="100px" height="100px"/>
+  </Sommaire>
+
+
+</aside>
+<article id="galerie">
+  <h1>Ton ami Adachi !</h1>
+    <p>Adachi ! Montre moi <MC id="id_quoi">...</MC></p>
+    <img class="central" id="id_image" src="./Images/Adachi_presente/Adachi.jpg" height="350px"/>
+    <PARTIE>Méthode </PARTIE>
+    <input type="button" value="Un coup haut" onclick="changeImageM1('./Images/Adachi_presente/Overhead.jpg', 'un Overhead')"
+    />
+      <input type="button" value="Un coup bas" onclick="changeImageM1('./Images/Adachi_presente/Sweep.jpg', 'un Sweep')"
+    />
+    <br/>
+    <PARTIE>Méthode </PARTIE>
+    <input type="button" value="Ton anti-air" onclick="changeImageM2('id_image', 'id_quoi', './Images/Adachi_presente/Anti-air.jpg', 'Ton Anti-air')"
+    />
+    <input type="button" value="Ton Reversal" onclick="changeImageM2('id_image', 'id_quoi', './Images/Adachi_presente/Reversal.jpg', 'ton Reversal')"
+    />
+    <br/>
+    <PARTIE>Méthode </PARTIE>
+    <input type="button" value="Ton TANK" onclick="changeImageM3('./Images/Adachi_presente/TANK.jpg','UN TANK!!!')"
+    />
+    <input type="button" value="Ton Attaque ULTIME" onclick="changeImageM3( './Images/Adachi_presente/Astral.jpg', '9999 Degats')"
+    />
+    <br/>
+    <input type="button" value="ton visage?" onclick="changeImageM3('./Images/Adachi_presente/Adachi.jpg','...')"
+    />
+    <br/>
+
+
+
+
+
+ </article>
+</Central>
+<footer>
+  <nav>
+  <a class="inactif" href="./1_presentation.xhtml"><img src="./Images/gauche.png" alt="droite"/></a>
+  <a class="inactif" href="../accueil.xhtml"><img src="./Images/home.png" alt="Accueil"/></a>
+  <a class="inactif" href="./1_presentation.xhtml"><img src="./Images/presentation.png" alt="Accueil"/></a>
+  <a class="actif"><img src="./Images/galerie.png" alt="Accueil"/></a>
+  <a class="inactif" href="./3_inscription.xhtml"><img src="./Images/inscription.png" alt="Accueil"/></a>
+  <a class="inactif" href="./3_inscription.xhtml"><img src="./Images/droite.png" alt="droite"/></a>
+</nav>
+</footer>
+
+
+  <script>
+  var mtd3a = document.querySelectorAll(' MC,#id_image');
+  var but=document.querySelectorAll('input');
+  var ousel=document.querySelectorAll('#carous')
+
+  var arc_en_ciel= document.getElementById('fond');
+  var bodyTag = document.getElementById('galerie');
+  var p1Tag   = bodyTag.childNodes[3];
+  var bTag    = p1Tag.lastChild;
+  var imgTag  = bodyTag.childNodes[5];
+  console.log(p1Tag)
+  console.log(bodyTag.childNodes[5])
+
+  console.log("p1Tag  : "+ p1Tag.innerHTML);
+  console.log("bTag   : "+ bTag.innerHTML);
+
+  console.log("imgTag : "+ imgTag.src);
+  </script>
+
+</html>

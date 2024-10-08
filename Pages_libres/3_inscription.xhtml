@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Formulaire</title>
+  <script type="text/javascript" src="./Scripts/formulaire.js"></script>
+  <link href="./styles/formulaire.css" rel="stylesheet"  />
+
+</head>
+
+<header>
+  <nav><a class="inactif" href="../Page_imposée/livre_Petit/livre_v2.xhtml"><img src="./Images/IMPOSEE.png" alt="Accueil"/></a></nav>
+
+
+
+</header>
+<Central>
+<aside>
+
+
+
+
+  <img src="./Images/aki.gif" alt="Akihiko sanada" />
+
+
+
+
+</aside>
+
+<article>
+  <form method="get" action="https://httpbin.org/get">
+    <h3>Identité</h3><br />
+    <bloc>
+      <champ>
+    <label for="f_civ">Civilité :</label>
+    <select name="iden_civilite" id="pet-select">
+    <option value="">---</option>
+    <option value="Monsieur">Mr</option>
+    <option value="Madame">Mme</option>
+    </select>
+    <br/>
+  </champ>
+  <champ>
+    <label for="f_prenom">Prénom :</label>
+    <input type="text" name="iden_prenom" id="f_prenom" />
+    <br />
+  </champ>
+  <champ>
+    <label for="f_nom">Nom :</label>
+    <input type="text" name="iden_nom" id="f_nom" />
+    <br />
+  </champ>
+  <champ>
+    <label for="f_date">Date de naissance :</label>
+    <input type="date" name="iden_date" id="naiss" />
+    <br/>
+  </champ>
+  <champ>
+    <label for="f_mail">Email :</label>
+    <input required="required" type="email" name="iden_email" id="naiss" />
+    <br/>
+  </champ></bloc>
+    <h3>Adresse de facturation</h3><br />
+    <bloc>
+    <champ>
+    <label for="f_fact_adresse">Adresse :</label>
+    <input required="required" type="text" name="fact_adresse" id="fact_adr" />
+    <br/>
+  </champ>
+  <champ>
+    <label for="f_fact_poste">Code postal :</label>
+    <input required="required" type="number" max="99999" name="fact_code_postal" id="fact_cod" />
+    <br/>
+  </champ>
+  <champ>
+    <label for="f_fact_ville">ville :</label>
+    <input required="required" type="text" name="fact_ville" id="fact_vil" />
+    <br/>
+  </champ></bloc>
+<h3>Adresse de livraison</h3><br />
+    <bloc>
+      <champ>
+    <label for="f_idem">Idem que facturation :</label>
+    <input onclick="idem()" type="checkbox" name="livr_idem" id="idemmm" />
+    <br/>
+  </champ>
+  <champ>
+    <label for="f_livr_adresse">Adresse :</label>
+    <input required="required" type="text" name="livr_adresse" id="livr_adr" />
+    <br/>
+  </champ>
+  <champ>
+    <label for="f_livr_poste">Code postal :</label>
+    <input required="required" type="number" max="99999" name="livr_code_postal" id="livr_cod" />
+    <br/>
+  </champ>
+  <champ>
+    <label for="f_livr_ville">ville :</label>
+    <input required="required" type="text" name="livr_ville" id="livr_vil" />
+    <br/>
+  </champ>
+</bloc>
+
+
+
+
+
+    <br/>
+    <p>
+    <input type="submit" value="Envoyer" /> </p></form>
+  </article>
+</Central>
+<footer>
+  <nav>
+  <a class="inactif" href="./2_galerie.xhtml"><img src="./Images/gauche.png" alt="gauche"/></a>
+  <a class="inactif" href="../accueil.xhtml"><img src="./Images/home.png" alt="Accueil"/></a>
+  <a class="inactif" href="./1_presentation.xhtml"><img src="./Images/presentation.png" alt="Accueil"/></a>
+  <a class="inactif" href="./2_galerie.xhtml"><img src="./Images/galerie.png" alt="Accueil"/></a>
+  <a class="actif"><img src="./Images/inscription.png" alt="Accueil"/></a>
+  <a class="inactif" href="../accueil.xhtml"><img src="./Images/droite.png" alt="droite"/></a>
+</nav>
+</footer>
+
+</html>

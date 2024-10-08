@@ -1,0 +1,157 @@
+html{
+  background-color: black;
+  display:flex;
+  flex-direction: column;
+  height:100%;
+
+
+}
+header {
+  background-image: url("../logos/download.png");
+  background-size:contain;
+
+  height:10%;
+
+
+  border-bottom:4px solid darkred;
+
+}
+Central{
+
+  display:flex;
+  flex-direction: row;
+  height:80%;
+}
+aside{
+  color:darkorange;
+
+
+  display:flex;
+
+
+  width:10%;
+  height:100%;
+
+  border-right:4px solid darkred;
+
+}
+aside img{
+  width:100%;
+  height:70%;
+  align-self: center;
+
+}
+article{
+
+  color:white;
+  background-image: url("../Images/diovsjotaro.png"),url("../Images/backk.jpg");
+
+  background-attachment: scroll,local;
+  background-size:cover,auto;
+
+  width:90%;
+  display:flex;
+  flex-direction: column;
+  overflow:auto;
+
+
+}
+
+
+article p{
+  padding-left:80px;
+  font-size:20px;
+}
+
+article form{
+  display:flex;
+  flex-direction: column;
+  align-self: center;
+
+
+}
+footer{
+
+  height:10%;
+  background-image: url("../logos/download.png");
+  background-size:contain;
+  border-top:4px solid darkred;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+nav{
+  height:100%;
+  width:100%;
+
+
+
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+
+
+nav a{
+  height:80%;
+  background-color: darkred;
+
+
+}
+nav a.actif{
+  background-color:darkgreen;
+}
+nav a.inactif:hover{
+  background-color: darkgreen;
+  transition-duration: 0.3s;
+  box-shadow: 0px 0px 10px green;
+}
+
+
+a img{
+  height:100%;
+  width:100%;
+}
+
+
+
+
+
+
+
+
+bloc{
+  padding:10px;
+  border-bottom:2px solid darkorange;
+  border-top:2px solid darkorange;
+  border-right:2px solid darkorange;
+  border-left:2px solid darkorange;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+PARTIE{
+  color:orange;
+
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:40px;
+  border-bottom:8px dashed darkorange;
+  border-top:8px dashed darkorange;
+  font-size:35px;
+
+}
+input,select{
+  background-color:black;
+  color: orange;
+}
+h3{
+  color:darkorange;
+  text-decoration: underline;
+}
